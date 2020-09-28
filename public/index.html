@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>To-Do-List</title>
+        <script src="es-code.js"></script>
+    </head>
+    <body class="bg-indigo-400">
+        <div class="container mx-auto mt-12 text-center text-2xl">
+            <h3 class="my-2 font-semibold">To-Do-List</h3>
+            <div class="box-border box-content mx-auto bg-gray-300 rounded-lg border-gray-700 w-64 h-auto py-2">
+                <div class="border-b-2 mx-auto w-4/5 border-indigo-400 pb-1 px-0">
+                    <input class="text-base bg-transparent w-3/5 outline-none px-3 py-1" type="text" placeholder="List" name="input-to-do" id="input-to-do">
+                    <input class="outline-none bg-indigo-400 hover:bg-indigo-600 cursor-pointer text-white py-1 px-4 text-base rounded-full inline" onclick="addList()" type="button" value="Add">
+                </div>
+                <table class="mt-4 mx-auto w-4/5 mb-2 cursor-default" id="all-list">
+                    <tr>
+                        <th class="text-base w-3 font-semibold border-b-2 border-indigo-400">
+                            NO
+                        </th>
+                        <th class="text-base w-auto font-semibold border-b-2 border-indigo-400">
+                            CONTENT
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
